@@ -6,148 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/styles/contacto.css">
     <title>Beauté et Bien-être. Estética integral.</title>
-  
-    <style>
-        body {
-            font-family: "Didot", "Didot LT STD", "Hoefler Text", "Garamond", "Calisto MT", "Times New Roman", "serif", monospace;
-            background: linear-gradient(to right, #18a1ad, #44f1b6);
-            padding: 0;
-            margin: 0;
-        }
-
-        header {
-            text-align: center;
-        }
-
-        h1 {
-            font-size: 48px;
-            background-color: #0c4d53;
-            padding: 10px;
-            margin: 0;
-            color: #44f1b6;
-        }
-
-        h2 {
-            font-size: 36px;
-            margin: 0;
-            padding: 0;
-            letter-spacing: 5px;
-            color: #0c4d53;
-        }
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-            background-color: #0fc083;
-        }
-
-        li {
-            float: left;
-        }
-
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-        li a:hover:not(.active) {
-            background-color: #15eda3;
-        }
-
-        .active {
-            background-color: #127780;
-        }
-    
-        label {
-            color: #0c4d53;
-            letter-spacing: 5px;
-            font-size: 24px;
-              
-            margin: 0;
-            padding: 0;
-            
-        }
-
-        input[type=text],
-        input[type=email],
-        textarea,
-        select {
-            font-size: 16px;
-
-            width: 100%;
-            padding: 12px 20px;
-            margin: 8px 0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            
-            display: inline-block;
-            box-sizing: border-box;
-        }
-    
-        input[type=submit] {
-        background-color: #0fc083;
-        color: white;
-        font-size:larger; 
-        
-        width: 100%;
-        padding: 14px 20px;
-        margin: 8px 0;
-        border: none;
-        border-radius: 4px;
-
-        cursor: pointer;
-
-        }
-    
-        input[type=submit]:hover {
-        background-color: #127780;
-        }
-    
-        div.contenedor-formulario {
-        border-radius: 5px;
-        padding: 20px;
-
-        display: flex; 
-        justify-content: space-between;
-        align-items: center;
-        }
-
-        .footer {
-            background-color: #127780;
-            color: #44f1b6;
-            padding: 10px;
-            text-align: center;
-            clear: both;
-        }
-    
-    </style>
 
 </head>
 
 <body>
-
     <header>
         <h1>Beauté et Bien-être. Estética integral.</h1>
         <nav>
             <ul>
                 <li><a href="index.html">HOME</a></li>
-                    <li><a href="tratamientos.html">TRATAMIENTOS</a></li>
-                    <li><a href="beneficios.html">BENEFICIOS</a></li>
-                    <li><a href="productos.html">PRODUCTOS</a></li>
-                    <li><a class="active" href="contacto.html">CONTACTO</a></li>
+                <li><a href="tratamientos.html">TRATAMIENTOS</a></li>
+                <li><a href="beneficios.html">BENEFICIOS</a></li>
+                <li><a href="productos.html">PRODUCTOS</a></li>
+                <li><a class="active" href="contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
-        <div class="contenedor-formulario"; style="width:45%; display:inline-block";>
-            <form>
+        <div class="contenedor-contacto">
+            <form action="https://formspree.io/f/xlderjnq" method="post">
                 <label for="nombre">Nombre: </label>
                 <input type="text" id="nombre" name="nombre" placeholder="Escribí aquí tu nombre" required minlength="3">
     
@@ -162,10 +42,12 @@
                     <option value="Limpieza Facial">Limpieza Facial</option>
                     <option value="Masaje Relajante">Masaje Relajante</option>
                     <option value="Masaje Descontracturante">Masaje Descontracturante</option>
+                    <!-- 
                     <option value="Tratamiento Celulitis">Tratamiento Celulitis</option>
                     <option value="Tratamiento Adiposidad">Tratamiento Adiposidad</option>
                     <option value="Tratamiento Estrías">Tratamiento Estrías</option>
                     <option value="Tratamiento Flaccidez">Tratamiento Flaccidez</option>
+                    -->
                 </select>
     
                 <label for="comentario">Comentario: </label>
@@ -179,27 +61,27 @@
                 <input type="radio" id="motivo" name="motivo" class="boton"><i>Otros</i>
     
                 <input type="submit" value="Enviar">
-    
             </form>
         </div>
     
-        <div class="contenedor-formulario"; style="width: 45%; display:inline-block";>
+        <div class="contenedor-contacto">
             <h2><i>Nuestra ubicación:</i></h2>
             <br>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.3045298740144!2d-58.468925724859076!3d-34.54584415444314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb69e8ce618ed%3A0xb4c25a51a97f1730!2sManzanares%20%26%20Arcos%2C%20C1429%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727434136518!5m2!1ses!2sar" width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </main> 
 
-    <footer class="footer">
-        <div>
-            <img src="assets/img/logo.png" alt="Logo de la Marca" height="100px">
-            <p><img class="image3" src="assets/img/icons8-nuevo-post-32.png" alt="Logo de Email"> bb.esteticaintegral@gmail.com</p>
-            <p><img class="image3" src="assets/img/icons8-whatsapp-32.png" alt="Logo de Whatsapp"> +54 9 11 6106 3888</p>
-            <p><img class="image3" src="assets/img/icons8-instagram-32.png " alt="Logo de Instagram"> @bb.estetica.integral</p>
-            <p>Derechos reservados &copy; 2024</p>
+    <footer>
+        <div class="divfooter">
+            <img class="image3" src="assets/img/logo.png" alt="Logo de la Marca">
         </div>        
+        <div class="divfooter" id="datos">
+            <p><img class="image4" src="assets/img/icons8-nuevo-post-32.png" alt="Logo de Email"> bb.esteticaintegral@gmail.com</p>
+            <p><img class="image4" src="assets/img/icons8-whatsapp-32.png" alt="Logo de Whatsapp"> +54 9 11 6106 3888</p>
+            <p><img class="image4" src="assets/img/icons8-instagram-32.png " alt="Logo de Instagram"> @bb.estetica.integral</p>
+        </div>
+        <p>Derechos reservados &copy; 2024</p>
     </footer>
-
 </body>
 
 </html>

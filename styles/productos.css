@@ -1,0 +1,161 @@
+
+body {
+    font-family: "Didot", "Didot LT STD", "Hoefler Text", "Garamond", "Calisto MT", "Times New Roman", "serif", monospace;
+    background: linear-gradient(to right, #18a1ad, #44f1b6);
+    margin: 0;
+    padding: 0;
+
+}
+
+footer {
+    background-color: #127780;
+    color: #44f1b6;
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+    /*Revisar propiedad clear*/
+    clear: none;
+}
+
+/* SELECTORES POR ELEMENTO */
+
+h1 {
+    background-color: #0c4d53;
+    color: #44f1b6;
+    text-align: center;
+    font-size: 48px;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    color: #0c4d53;
+    text-align: center;
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 5px;
+}
+
+h3 {
+    color: #0c4d53;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    background-color: #0fc083;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*revisar propiedad overflow*/
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    background-color: #18a1ad;
+    margin: 10px;
+}
+
+td {
+    border: 1px solid black;
+    padding: 10px 20px;
+}
+
+th {
+    border: 1px solid black;
+    padding: 10px 20px;
+    background-color: #127780;
+}
+
+/* SELECTORES POR CLASE */
+
+.image {
+    height: auto;
+    width: 300px;
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+.image2 {
+    height: auto;
+    width: 300px;
+    float: left;
+    margin-right: 25px;
+    margin-bottom:  20px;
+    margin-top: 20px;
+}
+
+.image3 {
+    height: 200px;
+    width: auto;
+    float: center;
+    vertical-align: middle;
+}
+
+.image4{
+    height: 32px;
+    width: auto;
+    float: inline-start;
+    margin-right: 15px;
+}
+
+.active {
+    background-color: #127780;
+}
+
+.divfooter{
+    display:inline-block;
+}
+
+.container {
+    color: #0c4d53;
+    text-align: justify;
+    float: center;
+    width: 95%;
+    margin: 10px;
+    padding: 20px;
+    max-width: 100%;
+    line-height: 1.5;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+}
+
+/* SELECTORES POR IDENTIFICADOR */
+#datos{
+    text-align: left;
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+/* SELECTORES COMBINADOS */
+
+li a {
+    color: white;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    /* revisar propiedad display */
+    display: block;
+    
+}
+
+/*revisar :not*/
+li a:hover:not(.active) {
+    background-color: #15eda3;
+}
+
+
