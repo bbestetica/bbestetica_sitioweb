@@ -1,0 +1,99 @@
+/* BODY */
+
+body {
+    font-family: "Playfair Display", serif;
+    font-style: normal;
+    font-weight: 400;
+    background: linear-gradient(to right, #18a1ad, #44f1b6);
+    margin: 0;
+    padding: 0;     
+}
+
+/* HEADER */
+
+header h1 {
+    background-color: #0c4d53;
+    color: #44f1b6;
+    text-align: center;
+    font-size: 48px;
+    margin: 0;
+    padding: 20px;
+}
+
+header ul {
+    background-color: #0fc083;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+header li {
+    float: left;
+}
+
+header li a {
+    color: white!important;
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    display: block;
+}
+
+header .active {
+    background-color: #127780;
+}
+
+header li a:hover:not(.active) {
+    background-color: #15eda3;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #127780;
+    color: #44f1b6;
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    padding: 5px;  
+}
+
+footer div{
+    display:inline-block;
+}
+
+footer div p a:link, a:visited, a:active {
+    text-decoration:none;
+    color: #44f1b6;
+}
+
+footer .bblogo{
+    height: 200px;
+    width: auto;
+    float: center;
+    vertical-align: middle;
+}
+
+footer .datos{
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 400;
+}
+
+footer .iconoredes{
+    height: 32px;
+    width: auto;
+    float: inline-start;
+    margin-right: 15px;
+}
+
+
+
+
+
+
+
+
+
+

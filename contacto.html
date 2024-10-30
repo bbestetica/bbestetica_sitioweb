@@ -6,9 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/styles/contacto.css">
-    <title>Beauté et Bien-être. Estética integral.</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <title>Beauté et Bien-être. Estética integral.</title>
 </head>
 
 <body>
@@ -20,68 +25,76 @@
                 <li><a href="tratamientos.html">TRATAMIENTOS</a></li>
                 <li><a href="beneficios.html">BENEFICIOS</a></li>
                 <li><a href="productos.html">PRODUCTOS</a></li>
+                <li><a href="recomendaciones.html">RECOMENDACIONES</a></li>
                 <li><a class="active" href="contacto.html">CONTACTO</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
-        <div class="contenedor-contacto">
-            <form action="https://formspree.io/f/xlderjnq" method="post">
-                <label for="nombre">Nombre: </label>
-                <input type="text" id="nombre" name="nombre" placeholder="Escribí aquí tu nombre" required minlength="3">
-    
-                <label for="apellido">Apellido: </label>
-                <input type="text" id="apellido" name="apellido" placeholder="Escribí aquí tu apellido" required minlength="3">
-    
-                <label for="mail">Email: </label>
-                <input type="email" id="mail" name="mail" placeholder="Escribí aquí tu mail" required>
-    
-                <label for="tratamiento">Tratamiento: </label>
-                <select name="tratamiento" id="tratamiento">
-                    <option value="Limpieza Facial">Limpieza Facial</option>
-                    <option value="Masaje Relajante">Masaje Relajante</option>
-                    <option value="Masaje Descontracturante">Masaje Descontracturante</option>
-                    <!-- 
-                    <option value="Tratamiento Celulitis">Tratamiento Celulitis</option>
-                    <option value="Tratamiento Adiposidad">Tratamiento Adiposidad</option>
-                    <option value="Tratamiento Estrías">Tratamiento Estrías</option>
-                    <option value="Tratamiento Flaccidez">Tratamiento Flaccidez</option>
-                    -->
-                </select>
-    
-                <label for="comentario">Comentario: </label>
-                <textarea name="comentario" id="comentario" placeholder="Escribí aquí tu comentario"></textarea>
-    
-                <label for="motivo">Motivo de contacto: </label>
-                <hr>
-                <input type="radio" id="motivo" name="motivo" class="boton"><i>Consultas</i>
-                <input type="radio" id="motivo" name="motivo" class="boton"><i>Solicitar un turno</i>
-                <input type="radio" id="motivo" name="motivo" class="boton"><i>Suscribirme al newsletter</i>
-                <input type="radio" id="motivo" name="motivo" class="boton"><i>Otros</i>
-    
-                <input type="submit" value="Enviar">
-            </form>
-        </div>
-    
-        <div class="contenedor-contacto">
-            <h2><i>Nuestra ubicación:</i></h2>
-            <br>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.3045298740144!2d-58.468925724859076!3d-34.54584415444314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb69e8ce618ed%3A0xb4c25a51a97f1730!2sManzanares%20%26%20Arcos%2C%20C1429%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727434136518!5m2!1ses!2sar" width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        <section>
+            <div class="contenedor-contacto">
+                <form action="https://formspree.io/f/xlderjnq" method="post">
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribí aquí tu nombre" required minlength="3">
+        
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" id="apellido" name="apellido" placeholder="Escribí aquí tu apellido" required minlength="3">
+        
+                    <label for="mail">Email: </label>
+                    <input type="email" id="mail" name="mail" placeholder="Escribí aquí tu mail" required>
+        
+                    <label for="tratamiento">Tratamiento: </label>
+                    <select name="tratamiento" id="tratamiento">
+                        <option value="Limpieza Facial">Limpieza Facial</option>
+                        <option value="Masaje Relajante">Masaje Relajante</option>
+                        <option value="Masaje Descontracturante">Masaje Descontracturante</option>
+                        <!-- 
+                        <option value="Tratamiento Celulitis">Tratamiento Celulitis</option>
+                        <option value="Tratamiento Adiposidad">Tratamiento Adiposidad</option>
+                        <option value="Tratamiento Estrías">Tratamiento Estrías</option>
+                        <option value="Tratamiento Flaccidez">Tratamiento Flaccidez</option>
+                        -->
+                    </select>
+        
+                    <label for="comentario">Comentario: </label>
+                    <textarea name="comentario" id="comentario" placeholder="Escribí aquí tu comentario"></textarea>
+        
+                    <label for="motivo">Motivo de contacto: </label>
+                    <hr>
+                    <input type="radio" id="motivo" name="motivo" class="boton"><i>Consultas</i>
+                    <input type="radio" id="motivo" name="motivo" class="boton"><i>Solicitar un turno</i>
+                    <input type="radio" id="motivo" name="motivo" class="boton"><i>Suscribirme al newsletter</i>
+                    <input type="radio" id="motivo" name="motivo" class="boton"><i>Otros</i>
+        
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        
+            <div class="contenedor-contacto">
+                <h2><i>Nuestra ubicación:</i></h2>
+                <br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.3045298740144!2d-58.468925724859076!3d-34.54584415444314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb69e8ce618ed%3A0xb4c25a51a97f1730!2sManzanares%20%26%20Arcos%2C%20C1429%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1727434136518!5m2!1ses!2sar" width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        
     </main> 
 
     <footer>
-        <div class="divfooter">
-            <img class="image3" src="assets/img/logo.png" alt="Logo de la Marca">
+        <div>
+            <img class="bblogo" src="assets/img/logo.png" alt="Logo de la Marca">
         </div>        
-        <div class="divfooter" id="datos">
-            <p><img class="image4" src="assets/img/icons8-nuevo-post-32.png" alt="Logo de Email"> bb.esteticaintegral@gmail.com</p>
-            <p><img class="image4" src="assets/img/icons8-whatsapp-32.png" alt="Logo de Whatsapp"> +54 9 11 6106 3888</p>
-            <p><img class="image4" src="assets/img/icons8-instagram-32.png " alt="Logo de Instagram"> @bb.estetica.integral</p>
+        <div class="datos">
+            <p><img class="iconoredes" src="assets/img/icons8-nuevo-post-32.png" alt="Logo de Email"> 
+            <a href="mailto:bb.esteticaintegral@gmail.com">bb.esteticaintegral@gmail.com</a></p>
+            <p><img class="iconoredes" src="assets/img/icons8-whatsapp-32.png" alt="Logo de Whatsapp"> 
+            <a href="https://wa.me/+5491161063888">+ 54 9 11 6106 3888</a></p>
+            <p><img class="iconoredes" src="assets/img/icons8-instagram-32.png " alt="Logo de Instagram"> 
+            <a href="https://www.instagram.com/bb.estetica.integral?igsh=MW4yNWpiMzd6YTNqdw==">@bb.estetica.integral</a></p>
         </div>
         <p>Derechos reservados &copy; 2024</p>
     </footer>
+    
 </body>
 
 </html>

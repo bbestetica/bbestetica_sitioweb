@@ -1,7 +1,7 @@
 
 # Página Web del Emprendimiento "Beauté et Bien-etre"
 
-[Beauté et Bien-etre] (https://glottis-el-gato.netlify.app/)
+[Beauté et Bien-etre]
 
 Descripción:
 
@@ -16,6 +16,20 @@ En esta página podrás encontrar:
 -   Tratamientos: Caracterización de las diferentes prácticas con sus beneficios.
 -   Productos: Una sección para comprar los cosméticos indicados por el profesional. 
 -   Contacto: Un formulario para recepción de consultas. 
+
+
+Versión 2
+- Agrego Formspree al formulario
+- Creación hojas de estilo css
+- Modificaciones header, footer, contenido home, contenido tratamientos. 
+
+Versión 3
+- Creación hoja de estilo unificado.
+- Creación opción consejos. 
+- Cambio de fuente.
+
+
+
 
 Paleta de colores:
 #0c4d53

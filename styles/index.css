@@ -1,101 +1,33 @@
-/* SELECTORES POR SECCIÓN */
-
-body {
-    font-family: "Didot", "Didot LT STD", "Hoefler Text", "Garamond", "Calisto MT", "Times New Roman", "serif", monospace;
-    background: linear-gradient(to right, #18a1ad, #44f1b6);
-    margin: 0;
-}
-
-footer {
-    background-color: #127780;
-    color: #44f1b6;
-    font-size: 20px;
-    text-align: center;
-    padding: 5px;
-    margin: 0;
-    /*Revisar propiedad clear*/
-    clear: none;
-}
-
 /* SELECTORES POR ELEMENTO */
-
-h1 {
-    background-color: #0c4d53;
-    color: #44f1b6;
-    text-align: center;
-    font-size: 48px;
-    margin: 0;
-    padding: 20px;
-}
 
 h2 {
     color: #0c4d53;
     text-align: center;
-    font-size: 36px;
-    margin: 0;
-    padding: 0;
     letter-spacing: 5px;
-}
-
-h3 {
-    color: #0c4d53;
-    font-size: 24px;
     margin: 0;
     padding: 0;
-}
-
-ul {
-    background-color: #0fc083;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    /*revisar propiedad overflow*/
-    overflow: hidden;
-}
-
-li {
-    float: left;
 }
 
 /* SELECTORES POR CLASE */
 
-.image {
+.grid-container {
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-template-rows: repeat(3, auto); 
     height: auto;
-    width: 300px;
-    float: right;
-    margin-left: 20px;
-    margin-bottom: 10px;
-}
-
-.image2 {
-    height: auto;
-    width: 300px;
-    float: left;
-    margin-right: 25px;
-    margin-bottom:  20px;
-    margin-top: 20px;
-}
-
-.image3 {
-    height: 200px;
     width: auto;
-    float: center;
-    vertical-align: middle;
-}
+    
+    grid-gap:0.5em;
+    align-items: center;
 
-.image4{
-    height: 32px;
-    width: auto;
-    float: inline-start;
-    margin-right: 15px;
-}
-
-.active {
-    background-color: #127780;
-}
-
-.divfooter{
-    display:inline-block;
+    color: #0c4d53;
+    text-align: justify;
+    margin: auto;
+    width: 95%;
+    padding: 20px;
+    max-width: 100%;
+    line-height: 1.5;
+    font-size: 18px;
 }
 
 .container {
@@ -104,36 +36,77 @@ li {
     float: center;
     width: 95%;
     margin: 10px;
-    padding: 20px;
-    max-width: 100%;
+    padding: 10px;
     line-height: 1.5;
     font-size: 18px;
 }
 
-/* SELECTORES POR IDENTIFICADOR */
-#datos{
-    text-align: left;
-    vertical-align: top;
-    font-weight: bold;
-    font-size: 1.25em;
+.image {
+    height: auto;
+    width: 350px;
+    float: right;
+    vertical-align: middle;
+
+}
+.image2 {
+    height: auto;
+    width: 350px;
+    float: left;
+    vertical-align: middle;
+
 }
 
-/* SELECTORES COMBINADOS */
 
-li a {
-    color: white;
-    text-align: center;
-    padding: 14px 30px;
-    text-decoration: none;
-    /* revisar propiedad display */
-    display: block;
+
+.texto1 {
+    grid-column: span 2;
+    grid-row: 1;
+    padding: 5px;
+
     
 }
+.imagen1 {
+    grid-column: 3;
+    grid-row: 1;
+    width: 100%; /* Ocupará todo el ancho de la celda */
+    height: auto; /* Ocupará todo el alto de la celda */
+    object-fit: cover; /* Asegura que la imagen mantenga su proporción y llene la celda */
 
-/*revisar :not*/
-li a:hover:not(.active) {
-    background-color: #15eda3;
+   
 }
+.texto2 {
+    grid-column: span 2;
+    grid-row: 2;
+    padding: 5px;
+
+}
+.imagen2 {
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%; /* Ocupará todo el ancho de la celda */
+    height: auto; /* Ocupará todo el alto de la celda */
+    object-fit: cover; /* Asegura que la imagen mantenga su proporción y llene la celda */
+   
+}
+.texto3 {
+    grid-column: span 2;
+    grid-row: 3;
+    padding: 5px;
+
+}
+.imagen3 {
+    grid-column: 3;
+    grid-row: 3;
+    width: 100%; /* Ocupará todo el ancho de la celda */
+    height: auto; /* Ocupará todo el alto de la celda */
+    object-fit: cover; /* Asegura que la imagen mantenga su proporción y llene la celda */
+    
+
+
+
+}
+
+
 
 
 
