@@ -25,7 +25,7 @@ Versión 2
 
 Versión 3
 - Creación hoja de estilo unificado.
-- Creación opción consejos. 
+- Creación pestaña consejos. 
 - Cambio de fuente.
 
 

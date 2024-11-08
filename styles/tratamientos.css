@@ -1,45 +1,67 @@
-/* SELECTORES POR ELEMENTO */
 
 h2 {
     color: #0c4d53;
     text-align: center;
     font-size: 36px;
+    font-style: italic;
     margin: 0;
     padding: 0;
     letter-spacing: 5px;
+
 }
 
-table {
-    border-collapse: collapse;
-    border: 1px solid black;
-    letter-spacing: 1px;
-    font-size: 1rem;
-    background-color: #18a1ad;
+.grid-tratamientos {
+    display: inline-grid;
+    width: fit-content;
+    grid-template-columns: 0.75fr 1fr 1fr;;
+    grid-template-rows: auto;
+    color: #0c4d53;
+    background-color:none;
+    padding: 10px;
     margin: 10px;
+    grid-gap: 10px;
+    justify-content: space-around;
 }
-
-td {
+  
+.grid-item {
+    background-color:#18a1ad;
+    color: #0c4d53;
     border: 1px solid black;
-    padding: 10px 20px;
+    padding: 20px;
+    margin: 10px;
+    font-size: 10 px;
+    text-align: justify;
 }
 
-th {
+#faciales,
+#corporales {
+    background-color:#127780;
     border: 1px solid black;
-    padding: 10px 20px;
-    background-color: #127780;
+    padding: 20px;
+    font-size: 15 px;
+    text-align: justify;
+    color: aliceblue;
+    
+
 }
 
-/* SELECTORES POR CLASE */
-
-.nodisponible{
-    visibility: hidden;
+.descripcion-servicios{
+    display: inline;
+}
+.imagen-servicios{
+    max-width: 100%;
+    height: auto;
+    
 }
 
-/* SELECTORES COMBINADOS*/
+.imagen-ejemplo{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    overflow: hidden;
+}
 
-table td:hover:not(.active) {
+.grid-item:hover:not(.active) {
     background-color: #15eda3;
 }
-
-
 
