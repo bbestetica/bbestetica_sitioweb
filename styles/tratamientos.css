@@ -9,6 +9,15 @@ h2 {
     letter-spacing: 5px;
 
 }
+h3 {
+    font-size: 24px;
+    color: #0c4d53;
+    text-align: center;
+    letter-spacing: 5px;
+    margin: 5px;
+    padding: 5px;
+
+}
 
 .grid-tratamientos {
     display: inline-grid;
@@ -41,24 +50,30 @@ h2 {
     font-size: 15 px;
     text-align: justify;
     color: aliceblue;
-    
+
 
 }
 
 .descripcion-servicios{
-    display: inline;
-}
-.imagen-servicios{
-    max-width: 100%;
-    height: auto;
-    
+    display: flexbox;
+    align-content: space-between;
 }
 
+.imagen-servicios{
+    display: flex;
+    overflow: hidden; 
+    width: 100%; 
+    height: 250px; /* Altura fija */
+    justify-content: center;
+    align-items: baseline; /* Centrado vertical */
+    margin-bottom: 10px; 
+}
+
+
 .imagen-ejemplo{
-    width: 100%;
-    height: 100%;
-    object-fit: scale-down;
-    overflow: hidden;
+    width: 100%; 
+    height: auto;
+    min-height: 100%; 
 }
 
 .grid-item:hover:not(.active) {

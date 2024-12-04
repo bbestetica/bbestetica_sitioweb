@@ -8,13 +8,21 @@ h2 {
     margin: 0;
     padding: 0;
     letter-spacing: 5px;
+}
+h3 {
+    font-size: 24px;
+    color: #0c4d53;
+    text-align: center;
+    letter-spacing: 5px;
+    margin: 5px;
+    padding: 5px;
 
 }
 
 .grid-beneficios {
-    display: inline-grid;
-    width: fit-content;
-    grid-template-columns: repeat(5,auto);
+    display: grid;
+    width: 95%;
+    grid-template-columns: repeat(5, minmax(150px, 1fr));
     grid-template-rows: auto;
     color: #0c4d53;
     background-color:none;
@@ -22,16 +30,16 @@ h2 {
     margin: 10px;
     grid-gap: 10px;
     justify-content: space-around;
-
-    
+    max-width: 100%;  
+    margin: auto;
 }
   
 .grid-item {
-    background-color:#18a1ad;
+    background-color:#0fc083;
     border: 1px solid black;
     padding: 20px;
     font-size: 10 px;
-    text-align: justify;
+    text-align: left;
 }
 
 .encabezado-columna {
@@ -44,41 +52,36 @@ h2 {
 }
 
 .item-masoterapia{
-    background-color: #18a1ad;
+    background-color: #0fc083;
     border: 1px solid black;
     padding: 20px;
     font-size: 10 px;
     text-align: justify;
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 6;
+}
+
+.item-faciales{
+    background-color: #0fc083;
+    border: 1px solid black;
+    padding: 20px;
+    font-size: 10 px;
+    text-align: justify;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
 }
 
 .grid-item:hover:not(.active),
-.item-masoterapia:hover:not(.active) {
+.item-masoterapia:hover:not(.active),
+.item-faciales:hover:not(.active) {
     background-color: #15eda3;
 }
 
 
-/*
-
-FORMATO TABLA VIEJA
-
-table {
-    border-collapse: collapse;
-    border: 1px solid black;
-    letter-spacing: 1px;
-    font-size: 1rem;
-    background-color: #18a1ad;
-    margin: 10px;
-}
-
-td {
-    border: 1px solid black;
-    padding: 10px 20px;
-}
-*/
 
 
 
