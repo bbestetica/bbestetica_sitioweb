@@ -3,10 +3,10 @@
 body {
     font-family: "Playfair Display", serif;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 500;
     background: linear-gradient(to right, #18a1ad, #44f1b6);
-    margin: 0;
-    padding: 0;     
+    margin: 0px;
+    padding: 0px;    
 }
 
 /* HEADER */
@@ -15,17 +15,18 @@ header h1 {
     background-color: #0c4d53;
     color: #44f1b6;
     text-align: center;
-    font-size: 48px;
     margin: 0;
     padding: 20px;
+    /*font-size: 48px;*/
 }
 
 header ul {
+    list-style-type:none;
     background-color: #0fc083;
-    list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+
+    overflow: hidden
 }
 
 header li {
@@ -33,10 +34,11 @@ header li {
 }
 
 header li a {
+    text-decoration: none;
     color: white!important;
     text-align: center;
-    padding: 14px 30px;
-    text-decoration: none;
+    padding: 15px 30px;
+    
     display: block;
 }
 
@@ -63,22 +65,11 @@ footer div{
     display:inline-block;
 }
 
-footer div p a:link, a:visited, a:active {
-    text-decoration:none;
-    color: #44f1b6;
-}
-
 footer .bblogo{
     height: 200px;
     width: auto;
     float: center;
     vertical-align: middle;
-}
-
-footer .datos{
-    text-align: left;
-    vertical-align: middle;
-    font-weight: 400;
 }
 
 footer .iconoredes{
@@ -88,7 +79,15 @@ footer .iconoredes{
     margin-right: 15px;
 }
 
+footer .datos{
+    text-align: left;
+    vertical-align: middle;
+}
 
+footer div p a:link, a:visited, a:active {
+    text-decoration:none;
+    color: #44f1b6;
+}
 
 
 
