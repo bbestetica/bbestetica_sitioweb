@@ -19,24 +19,44 @@ h3 {
 
 }
 
-.grid-recomendaciones{
-    display: inline-grid;
-    width: auto;
-    grid-template-columns: auto auto auto;
+
+
+/* Estilo para la grid principal */
+.grid-recomendaciones {
+    display: grid; /* Cambiado a grid para mayor control */
+    width: 100%; /* Se ajusta al ancho completo del contenedor */
+    max-width: 100%; /* Previene que exceda el ancho del body */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Columnas adaptables */
     grid-template-rows: auto;
-
+    gap: 10px; /* Reemplaza grid-gap (más actual) */
     color: #0c4d53;
-    background-color:none;
     padding: 10px;
-    margin: 10px;
-    grid-gap: 10px;
-    justify-content: space-around;
-
+    margin: 0 auto; /* Centrado horizontal */
     text-align: justify;
-    float: center;
-    max-width: 100%;
     line-height: 1.5;
     font-size: 18px;
+    box-sizing: border-box; /* Evita que padding y bordes excedan el ancho */
+    overflow-x: hidden; /* Previene el desbordamiento horizontal */
+}
+
+
+
+
+
+.grid-item {
+
+    display: flex;
+    flex-direction: column; /* Organiza contenido verticalmente si hay varios elementos */
+    box-sizing: border-box; /* Asegura que padding no desborde el contenedor */
+
+    display:inline-block;
+    width: auto;
+    border-radius: 5px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: stretch; /* center */
+    font-size: 10 px;
+    text-align: justify;
 }
 
 .encabezado-columna {
@@ -50,12 +70,6 @@ h3 {
 
 h3{
     text-align: center;
-}
-
-.grid-item {
-    padding: 10px;
-    font-size: 10 px;
-    text-align: justify;
 }
 
 .grid-item:hover:not(.active){

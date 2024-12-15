@@ -21,10 +21,10 @@ h3 {
 
 .grid-tratamientos {
     display: grid;
-    width: auto;
+    /*width: auto;*/
     max-width: 100%;
     height: auto;
-    grid-template-columns: 1fr 1fr 1fr;;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 10px;
     
@@ -34,11 +34,16 @@ h3 {
     margin: auto;
     justify-content: space-around;
     line-height: 1.5;
-    
+    width: 100%; /* Ajusta al ancho total disponible */
+    margin: 0 auto; /* Centra la grid horizontalmente */
+    box-sizing: border-box; /* Asegura que padding y bordes no excedan el ancho */
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
 }
 
-
 .grid-item {
+    display: flex;
+    flex-direction: column; /* Alineación vertical */
+    justify-content: space-between; /* Espaciar contenido entre sí */
     background-color:#18a1ad;
     color: #0c4d53;
     border: 1px solid black;
@@ -46,7 +51,10 @@ h3 {
     margin: 10px;
     font-size: 10 px;
     text-align: justify;
+    border-radius: 5px; /* Bordes redondeados opcionales */
+    box-sizing: border-box; /* Asegura que padding no desborde el contenedor */
 }
+
 
 #faciales,
 #corporales {
@@ -58,6 +66,20 @@ h3 {
     color: aliceblue;
 
 
+}
+
+#faciales {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#corporales {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
 .descripcion-servicios{
@@ -81,6 +103,11 @@ h3 {
     min-height: 100%; 
     
 }
+
+
+
+
+
 
 .grid-item:hover:not(.active) {
     background-color: #15eda3;

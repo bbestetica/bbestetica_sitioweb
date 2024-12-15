@@ -19,28 +19,49 @@ h3 {
 
 }
 
+
+
+
 .grid-beneficios {
     display: grid;
-    width: 95%;
+    width: 100%; /* Ajusta al ancho total del contenedor */
+    max-width: 100%; /* Previene desbordamiento horizontal */
     grid-template-columns: repeat(5, minmax(150px, 1fr));
     grid-template-rows: auto;
     color: #0c4d53;
     background-color:none;
     padding: 10px;
-    margin: 10px;
+    margin: 0 auto; /* 10px; */
     grid-gap: 10px;
     justify-content: space-around;
     max-width: 100%;  
     margin: auto;
+    box-sizing: border-box; /* Incluye padding y bordes dentro del ancho total */
+    overflow-x: hidden; /* Previene el desbordamiento horizontal */
 }
-  
+
+
+
+
+
 .grid-item {
     background-color:#0fc083;
     border: 1px solid black;
-    padding: 20px;
+    padding: 20px 20px 20px 0px;
     font-size: 10 px;
     text-align: left;
+
+    border-radius: 5px; /* Bordes redondeados opcionales */
+    box-sizing: border-box; /* Evita el desbordamiento del padding */
 }
+
+#descripcion-limpieza,
+#descripcion-peeling,
+#descripcion-relajante,
+#descripcion-descontracturante {
+    padding: 20px;
+}
+
 
 .encabezado-columna {
     background-color:#127780;

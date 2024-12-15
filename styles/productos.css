@@ -19,40 +19,33 @@ h3 {
 
 }
 
-.grid-productos{
-    display: grid;
-    width: 95%;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: auto;
-
+.grid-productos {
+    display: grid; /* Mantiene la estructura grid */
+    width: 100%; /* Se asegura de ocupar todo el ancho disponible */
+    max-width: 100%; /* Previene el desbordamiento del body */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Columnas adaptables */
+    grid-template-rows: auto; /* Filas automáticas */
+    gap: 10px; /* Reemplazo moderno de grid-gap */
     color: #0c4d53;
-    background-color:none;
     padding: 10px;
-    margin: 10px;
-    grid-gap: 10px;
-    justify-content: space-around;
-
+    margin: 0 auto; /* Centra el grid horizontalmente */
     text-align: justify;
-    float: center;
-    max-width: 100%;
     line-height: 1.5;
     font-size: 18px;
+    box-sizing: border-box; /* Incluye padding y bordes en el ancho total */
+    overflow-x: hidden; /* Previene desbordamiento horizontal */
 }
 
-
-
-
+/* Estilo para los items */
 .grid-item {
-    width: 100%;
-    padding: 10px;
-    font-size: 10 px;
-    text-align: justify;
-    background-color:#0fc083;
-    border: 1px solid black;
-    padding: 20px;
-    font-size: 15 px;
-    text-align: center;
-    color: aliceblue;
+    padding: 20px; /* Ajustado para consistencia */
+    font-size: 15px; /* Corrige los errores de doble definición */
+    text-align: center; /* Centra el contenido en cada item */
+    background-color: #0fc083; /* Mantiene el color definido */
+    border: 1px solid black; /* Borde negro */
+    color: aliceblue; /* Texto en color blanco azulado */
+    border-radius: 5px; /* Bordes redondeados opcionales */
+    box-sizing: border-box; /* Evita el desbordamiento por padding */
 }
 
 .grid-item:hover:not(.active){
